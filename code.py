@@ -1,7 +1,15 @@
 # %%
-# Full research-novel pipeline:
-# Attention-weighted symptom embeddings * severity + co-occurrence graph embeddings + structured features
-# + RandomForest classifier + attention visualization
+# -------------------- Full Research-Novel Pipeline --------------------
+# Patient Disease Prediction using:
+# 1. Attention-weighted Symptom Embeddings scaled by Severity
+# 2. Symptom Co-occurrence Graph Embeddings (TruncatedSVD)
+# 3. Structured Symptom Features (One-hot Encoding)
+# 4. Deep Neural Network Classifier for multi-class disease prediction
+# 5. Explainability & Visualization:
+#    - Attention × Severity heatmaps per patient
+#    - SHAP feature importance
+#    - Top-k predictive symptoms per disease
+#    - t-SNE visualization of patient embeddings
 
 import pandas as pd
 import numpy as np
